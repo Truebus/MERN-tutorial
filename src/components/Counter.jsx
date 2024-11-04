@@ -25,7 +25,7 @@ function Counter() {
   };
   return (
     <div>
-      <h1>Counter: {count}</h1>
+      <h1 style={{backgroundColor: "pink"}}>Counter: {count}</h1>
       <button onClick={handleIncrease}>Increase</button>
       <button onClick={handleDecrease}>Increase</button>
 
@@ -33,7 +33,7 @@ function Counter() {
         post.map((post)=>{
             return(
                 <div>
-                    <h1>{post.title}</h1>
+                    <h1 className="text-center font-bold">{post.title}</h1>
                     <p>{post.body}</p>
                 </div>
             )
